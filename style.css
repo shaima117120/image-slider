@@ -1,0 +1,67 @@
+
+body {
+    text-align: center;
+    background-color:white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slider button {
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+
+#dots button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: gray;
+    border: none;
+    cursor: pointer;
+}
+
+#dots button.active {
+    background-color: darkblue;
+}
+
+@media (max-width: 425px) {
+    .slider img {
+        height: 250px;
+    }
+
+    .slider {
+        gap: 5px;
+    }
+
+    .slider button {
+        padding: 8px;
+    }
+}
